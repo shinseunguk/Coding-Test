@@ -1,18 +1,10 @@
 import Foundation
 
 func solution(_ my_string:String) -> Int {
-
-    for i in my_string {
-        if type(of: i) is Int {
-            print(i)
-        }
-        // } else {
-        //     print(i)
-        // }
+    return my_string.filter {
+        $0.isNumber // 숫자만 filter
+    }.map {
+        Int(String($0))! // 각 숫자 문자열을 Int로 변환
     }
-
-    return 0
+    .reduce(0, +) // 변환된 Int 값들을 모두 더함
 }
-
-print(solution("aAb1B2cC34oOp"))
-print(solution("1a2b3c4d123"))
