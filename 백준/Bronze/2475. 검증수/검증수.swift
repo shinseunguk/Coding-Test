@@ -1,4 +1,11 @@
 import Foundation
 
-let result = NSDecimalNumber(decimal: readLine()!.split(separator: " ").compactMap { Decimal(Int($0)!) } .map { pow($0, 2) }.reduce(0, +))
-print(Int(truncating: result) % 10)
+var total = 0
+let input = readLine()!.split(separator: " ").compactMap { Int($0) }
+
+
+for element in input {
+    total += element * element
+}
+
+print(total % 10)
