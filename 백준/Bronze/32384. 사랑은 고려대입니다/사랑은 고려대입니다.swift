@@ -1,0 +1,1 @@
+print(String(repeating: "LoveisKoreaUniversity ", count: Int(readLine()!)!))
