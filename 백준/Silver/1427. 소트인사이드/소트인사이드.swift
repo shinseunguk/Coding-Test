@@ -1,0 +1,1 @@
+print(readLine()!.sorted(by: >).compactMap { String($0) }.joined())
