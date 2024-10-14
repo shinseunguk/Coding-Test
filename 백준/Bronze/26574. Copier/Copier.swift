@@ -1,0 +1,1 @@
+for _ in 0 ..< Int(readLine()!)! { let input = Int(readLine()!)!; print("\(input) \(input)") }
