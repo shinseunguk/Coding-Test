@@ -1,0 +1,1 @@
+print(((Int(readLine()!)! * 8) + (Int(readLine()!)! * 3)) - 28)
