@@ -1,0 +1,1 @@
+print(Int(readLine()!)! * 3 + Int(readLine()!)! * 4 + Int(readLine()!)! * 5)
